@@ -1,7 +1,9 @@
-body{
+body {
     margin: 0px;
     background: #F5F6FA;
 }
+
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -13,14 +15,14 @@ header {
     width: 100%;
 }
 
-.horizontalContainer {
-    display: grid;
-    gap: 10px;
+.icon, .title, .searchMenu, .icons {
+    display: flex;
+    align-items: center;
 }
 
-.element {
-    padding: 10px;
-    border: 1px solid #ccc;
+.icon, .searchMenu button {
+    margin: 0 10px;
+    font-size: 20px;
 }
 
 .logoTitle {
@@ -28,59 +30,39 @@ header {
     font-size: 1.5em;
     font-family: "Inter", sans-serif;
     font-weight: bold;
+    margin-left: 0.5em;
 }
 
-.h2itle {
-    color: black;
-    font-family: "Inter", sans-serif;
+.searchMenu input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.searchMenu input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 40em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    font-size: 16px;
 }
 
 .textProfile {
     color: #5A607F;
     font-family: "Inter", sans-serif;
     font-size: 0.8em;
+    margin-left: 10px;
 }
 
-.icon, .title, .search-menu, .icons {
-    display: flex;
-    align-items: center;
-}
-
-.icon, .search-menu button {
-    margin: 0 10px;
-    font-size: 20px;
-}
-
-.search-menu input {
-    padding: 5px;
-    font-size: 16px;
-}
-
-.user {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.user-icon {
-    font-size: 24px;
-    margin-right: 5px;
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 5px;
-}
-
-.user-name {
-    font-size: 16px;
-}
-
-.search-menu input {
-    padding: 5px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    width: 35em;
-}
+/* Navigation */
 
 .container {
     display: flex;
@@ -88,17 +70,9 @@ header {
 
 .menu {
     width: 15%;
-    height: 42em;
     background-color: #F5F6FA;
     padding: 20px;
     border-right: 1px solid #D7DBEC;
-}
-
-.menu2 {
-    width: 18%;
-    height: 42em;
-    background-color: #F5F6FA;
-    padding: 20px;
 }
 
 .menu ul {
@@ -122,12 +96,6 @@ header {
     font-size: 1em;
 }
 
-/*.menu ul:hover {*/
-/*    background-color: #1E5EFF;*/
-/*    color: #FFFFFF;*/
-/*    border-radius: 10px;*/
-/*}*/
-
 .menu li:hover {
     background-color: #1E5EFF;
     color: #FFFFFF;
@@ -135,235 +103,7 @@ header {
 }
 
 li:hover a {
-    color: #FFFFFF; /* Синий цвет при наведении на <li> */
-}
-
-.menu2 a {
-    text-decoration: none;
-    color: #5A607F;
-    font-family: "Inter", sans-serif;
-    font-size: 1em;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-.content div {
-    margin-bottom: 1%;
-}
-
-.content h2 {
-    color: #333;
-}
-
-.informMenu {
-    margin-top: 15%;
-    color: #A1A7C4;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8em;
-}
-
-.rectangle {
-    margin-left: 10%;
-    width: 2em;
-    height: 1.2em;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    border-radius: 15px;
-}
-
-.search-container {
-    padding-left: 2%;
-    display: flex;
-    background-color: white;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.info-container {
-    padding: 3%;
-    background-color: white;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.search-input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.textInfo {
-    font-family: "Inter", sans-serif;
-    font-size: 1em;
-}
-
-.info-container-grey {
-    padding-left: 3%;
-    background-color: #F5F6FA;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.textInfogrey {
-    color: #5A607F;
-    font-family: "Inter", sans-serif;
-    font-size: 1em;
-}
-
-.border_grey {
-    margin-top: 3%;
-    border-bottom: 1px solid #D7DBEC;
-}
-
-.border_grey_big {
-    margin-top: 3%;
-    border-bottom: 1px solid #D7DBEC;
-    margin-left: -5%;
-    margin-right: -5%;
-}
-
-.h2infotext {
-    font-size: 1.3em;
-    color: black;
-    font-family: "Inter", sans-serif;
-}
-
-.circleInfo{
-    display: flex;
-    align-items: center;
-    margin: 0px;
-}
-
-.circle {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%; /* Превращаем квадрат в круг */
-    background-color: #F5F6FA; /* Цвет круга */
-    color: #5A607F; /* Цвет текста внутри круга */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Inter", sans-serif;
-    font-size: 1em; /* Размер текста */
-}
-
-.text-block {
-    width: 100%;
-    margin-left: 3%;
-
-}
-
-.textInfoSmall {
-    font-family: "Inter", sans-serif;
-    color: #5A607F;
-    font-size: 0.8em;
-}
-
-.container2 {
-    width: 60px;
-    height: 30px;
-    background-color: #FFF;
-    border: 2px solid #D7DBEC;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1E5EFF;
-    font-family: "Inter", sans-serif;
-}
-
-.container23 {
-    display: flex;
-}
-
-.pad {
-    padding-left: 2%;
-}
-
-.under-container {
-    padding: 3%;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.under_group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.under_block {
-    margin: 0.8em;
-}
-
-.textInfosmall2 {
-    font-family: "Inter", sans-serif;
-    font-size: 0.8em;
-}
-
-.bluetext {
-    font-family: "Inter", sans-serif;
-    font-size: 0.8em;
-    color: #1E5EFF;
-}
-
-.under_block_text {
-    margin-top: 1.5em;
-}
-
-.textInfoStartWork {
-    font-family: "Inter", sans-serif;
-    font-size: 1em;
-    margin: 1%;
-}
-
-.button {
-    padding: 10px 20px; /* Поля кнопки */
-    background-color: transparent; /* Прозрачный фон кнопки */
-    color: #5A607F; /* Цвет текста кнопки */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: color 0.3s ease; /* Плавное изменение цвета текста */
-    position: relative; /* Позиционирование для синей полоски */
-}
-
-.button:hover {
-    color: #1E5EFF; /* Цвет текста кнопки при наведении */
-}
-
-.button:active::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #1E5EFF; /* Цвет синей полоски */
-    bottom: 0;
-    left: 0;
-}
-
-.blockButtons {
-    flex: 0;
-    padding: 0px;
-}
-
-.border_grey_buttons {
-    border-bottom: 1px solid #D7DBEC;
+    color: #FFFFFF;
 }
 
 ul {
@@ -396,3 +136,264 @@ a.active {
     color: #FFFFFF;
     border-radius: 10px;
 }
+
+.rectangle {
+    margin-left: 10%;
+    width: 2em;
+    height: 1.2em;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.informMenu {
+    margin-top: 15%;
+    color: #A1A7C4;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8em;
+}
+
+/* Navigation2 */
+
+.menu2 {
+    width: 18%;
+    height: 42em;
+    background-color: #F5F6FA;
+    padding: 20px;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #5A607F;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+}
+
+.h2title {
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+/* Information */
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content div {
+    margin-bottom: 1%;
+}
+
+.content h2 {
+    color: #333;
+}
+
+.searchContainer {
+    padding-left: 2%;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.infoContainer {
+    padding: 3%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.h2InfoText {
+    font-size: 1.3em;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+.h2InfoText2 {
+    font-size: 1.3em;
+    color: black;
+    font-family: "Inter", sans-serif;
+    margin-top: 1.5em;
+}
+
+.textInfo {
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+}
+
+.infoContainerGrey {
+    padding-left: 3%;
+    background-color: #F5F6FA;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.textInfogrey {
+    color: #5A607F;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+}
+
+.borderGrey {
+    margin-top: 3%;
+    border-bottom: 1px solid #D7DBEC;
+}
+
+.circleInfo {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #F5F6FA;
+    color: #5A607F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+}
+
+.textBlock {
+    width: 100%;
+    margin-left: 3%;
+}
+
+.textInfoStartWork {
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    margin: 1%;
+}
+
+.blockButtons {
+    flex: 0;
+    padding: 0px;
+    padding-bottom: 1px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #5A607F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.button:hover {
+    color: #1E5EFF;
+}
+
+.button:active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #1E5EFF;
+    bottom: 0;
+    left: 0;
+}
+
+.borderGreyButtons {
+    border-bottom: 1px solid #D7DBEC;
+}
+
+.borderGreyBig {
+    margin-top: 3%;
+    border-bottom: 1px solid #D7DBEC;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+.containerForButtons {
+    display: flex;
+}
+
+.padding {
+    padding-left: 2%;
+}
+
+.containerYesAndNo {
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    border: 2px solid #D7DBEC;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E5EFF;
+    font-family: "Inter", sans-serif;
+}
+
+.textInfoSmall {
+    font-family: "Inter", sans-serif;
+    color: #5A607F;
+    font-size: 0.8em;
+}
+
+.underBlockText {
+    margin-top: 1.5em;
+}
+
+.underGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.underContainer {
+    padding: 3%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.underBlock {
+    margin: 0.8em;
+}
+
+.blueText {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8em;
+    color: #1E5EFF;
+}
+
+.textInfoSmall2 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8em;
+}
+
+/*.horizontalContainer {*/
+/*    display: grid;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.element {*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ccc;*/
+/*}*/
